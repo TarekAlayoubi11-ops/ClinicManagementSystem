@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\ClinicManagementSystem.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|c:\\projects\\clinicmanagementsystem.api\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|solutionrelative:controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|C:\\Projects\\ClinicManagementSystem.API\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|solutionrelative:controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBCB6C45-FDA4-4145-8218-796ADE0506C3}|..\\ClinicApp.DTO\\ClinicApp.DTO.csproj|c:\\projects\\clinicapp.dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E94E96-EF55-4689-BC31-06EDC96FB1B7}|..\\ClinicManagementSystem.BusinessLogic\\ClinicManagementSystem.BusinessLogic.csproj|c:\\projects\\clinicmanagementsystem.businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFAB303D-04D2-4C20-BF43-A12A02A65E5D}|..\\ClinicManagementSystem.DataAccess\\ClinicManagementSystem.DataAccess.csproj|c:\\projects\\clinicmanagementsystem.dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|C:\\Projects\\ClinicManagementSystem.API\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A917C9-8E40-40D8-9534-6BAAF9FBA89B}|ClinicManagementSystem.API.csproj|solutionrelative:controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorsController.cs",
+              "ToolTip": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "Controllers\\DoctorsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T12:49:04.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoicesController.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\InvoicesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
+              "ToolTip": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\InvoicesController.cs",
+              "RelativeToolTip": "Controllers\\InvoicesController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T16:40:30.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicManagementSystem.DataAccess\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\ClinicManagementSystem.DataAccess\\Class1.cs",
+              "ToolTip": "C:\\Projects\\ClinicManagementSystem.DataAccess\\Class1.cs*",
+              "RelativeToolTip": "..\\ClinicManagementSystem.DataAccess\\Class1.cs*",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAUwAMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T12:08:28.473Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Projects\\ClinicManagementSystem.API\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Controllers\\PatientsController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAA6wEYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T16:45:44.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicManagementSystem.BusinessLogic\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\ClinicManagementSystem.BusinessLogic\\Class1.cs",
+              "ToolTip": "C:\\Projects\\ClinicManagementSystem.BusinessLogic\\Class1.cs",
+              "RelativeToolTip": "..\\ClinicManagementSystem.BusinessLogic\\Class1.cs",
+              "ViewState": "AQIAAM8AAAAAAAAAAADwvzoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T12:07:43.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Projects\\ClinicApp.DTO\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\ClinicApp.DTO\\Class1.cs",
+              "ToolTip": "C:\\Projects\\ClinicApp.DTO\\Class1.cs",
+              "RelativeToolTip": "..\\ClinicApp.DTO\\Class1.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAA6wEUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:21:41.02Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
