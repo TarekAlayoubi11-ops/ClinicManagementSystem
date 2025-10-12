@@ -1,6 +1,8 @@
-.vs/
+# Build folders
 bin/
 obj/
+
+# User-specific files
 *.user
 *.suo
-*.log
+*.vs/
