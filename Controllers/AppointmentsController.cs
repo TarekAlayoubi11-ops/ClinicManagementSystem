@@ -10,20 +10,32 @@ namespace ClinicManagementSystem.API.Controllers
     [ApiController]
     public class AppointmentsController : ControllerBase
     {
+        private readonly string _connectionString;
+        public AppointmentsController(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection")
+                ?? throw new ArgumentNullException("Connection string 'DefaultConnection' not found.");
+            ;
+        }
+
+
         [HttpGet("Appointments")]
         public ActionResult<IEnumerable<AppointmentDTO>> GetAllAppointments()
         {
-            var appointments = AppointmentService.GetAllAppointments();
+            var appointments = AppointmentService.GetAllAppointments(_connectionString);
             if (appointments.Count == 0)
                 return NotFound(new { message = "No appointments found" });
 
             return Ok(appointments);
         }
 
+
+
+
         [HttpPost]
         public ActionResult AddAppointment(AppointmentDTO appointment)
         {
-            int result = AppointmentService.AddAppointment(appointment);
+            int result = AppointmentService.AddAppointment(appointment, _connectionString);
 
             if (result == -1)
                 return BadRequest(new { message = "Invalid appointment data" });
@@ -33,16 +45,19 @@ namespace ClinicManagementSystem.API.Controllers
             return Ok(new { message = "Appointment added successfully", id = result });
         }
 
+
+
+
         [HttpPut("{id}")]
         public ActionResult UpdateAppointment(int id, AppointmentDTO appointment)
         {
             if (id <= 0)
                 return BadRequest(new { message = "Invalid appointment id" });
             
-            if (!AppointmentService.AppointmentExists(id))
+            if (!AppointmentService.AppointmentExists(id, _connectionString))
                 return NotFound(new { message = "Appointment not found" });
 
-            int result = AppointmentService.UpdateAppointment(id, appointment);
+            int result = AppointmentService.UpdateAppointment(id, appointment, _connectionString);
 
             return result switch
             {
@@ -55,15 +70,18 @@ namespace ClinicManagementSystem.API.Controllers
             };
         }
 
+
+
+
         [HttpDelete("{id}")]
         public ActionResult DeleteAppointment(int id)
         {
             if (id<=0)
                 return BadRequest(new { message = "Invalid appointment id" });
-            if (!AppointmentService.AppointmentExists(id))
+            if (!AppointmentService.AppointmentExists(id, _connectionString))
                 return NotFound(new { message = "Appointment not found" });
 
-            int result = AppointmentService.DeleteAppointment(id);
+            int result = AppointmentService.DeleteAppointment(id, _connectionString);
             if (result == -99)
                 return StatusCode(500, new { message = "Server error" });
             if (result == 0)

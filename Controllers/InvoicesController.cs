@@ -10,10 +10,21 @@ namespace ClinicManagementSystem.API.Controllers
     [ApiController]
     public class InvoicesController : ControllerBase
     {
+
+        private readonly string _connectionString;
+        public InvoicesController(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection")
+                ?? throw new ArgumentNullException("Connection string 'DefaultConnection' not found.");
+            ;
+        } 
+
+
+
         [HttpGet("Invoices")]
         public ActionResult<IEnumerable<InvoiceDTO>> GetAllInvoices()
         {
-            var invoices = InvoiceService.GetAllInvoices();
+            var invoices = InvoiceService.GetAllInvoices(_connectionString);
             if (invoices.Count == 0)
                 return NotFound(new { message = "No invoices found" });
 
@@ -27,7 +38,7 @@ namespace ClinicManagementSystem.API.Controllers
             {
                 return BadRequest(new { message = "Invalid invoice id" });
             }
-            var invoice = InvoiceService.GetInvoiceById(id);
+            var invoice = InvoiceService.GetInvoiceById(id, _connectionString);
             if (invoice == null)
                 return NotFound(new { message = "Invoice not found" });
 
@@ -37,7 +48,7 @@ namespace ClinicManagementSystem.API.Controllers
         [HttpPost]
         public ActionResult AddInvoice(InvoiceDTO invoice)
         {
-            int result = InvoiceService.AddInvoice(invoice);
+            int result = InvoiceService.AddInvoice(invoice, _connectionString);
 
             return result switch
             {
@@ -56,10 +67,10 @@ namespace ClinicManagementSystem.API.Controllers
             {
                 return BadRequest(new { message = "Invalid invoice id" });
             }
-            if (!InvoiceService.InvoiceExists(invoiceId))
+            if (!InvoiceService.InvoiceExists(invoiceId, _connectionString))
                 return NotFound(new { message = "Invoice not found" });
 
-            int result = InvoiceService.UpdateInvoice(invoiceId, invoice);
+            int result = InvoiceService.UpdateInvoice(invoiceId, invoice, _connectionString);
 
             return result switch
             {
@@ -79,7 +90,7 @@ namespace ClinicManagementSystem.API.Controllers
             {
                 return BadRequest(new { message = "Invalid invoice id" });
             }
-            bool result = InvoiceService.DeleteInvoice(id);
+            bool result = InvoiceService.DeleteInvoice(id, _connectionString);
 
             if (!result)
                 return BadRequest(new { message = "Cannot delete invoice" });
