@@ -1,5 +1,8 @@
+using ClinicManagementSystem.API.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
+//builder.Services.Configure<Jwt>();
 // Add services to the container.
 
 builder.Services.AddControllers();
